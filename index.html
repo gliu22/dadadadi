@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head
+    content must come *after* these tags -->
+        <title>natscipub.org</title>
+        <!-- Bootstrap -->
+        <link href="assets/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="logobar">
+                <div class="logo">
+                    <a href="#"><img class="logo-img" src="img/logo.png" alt="natscipub.org"></a>
+                </div>
+                <div class="open-access">
+                    <a href="#"><img class="oa-logo" src="img/oa_logo_small.png" alt="open access"></a>
+                </div>
+                <div class="login-signup">
+                    <a class="login" href="#">Log in</a>
+                    <a class="signup" href="#">Sign up</a>
+                </div>
+            </div>
+            <div class="menubar">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li class="active">
+                                    <a href="#">HOME
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">Journals</a>
+                                </li>
+                                <li>
+                                    <a href="#">Books</a>
+                                </li>
+                                <li>
+                                    <a href="#">Conferences</a>
+                                </li>
+                                <li>
+                                    <a href="#">Guidelines</a>
+                                </li>
+                                <li>
+                                    <a href="#">Submission</a>
+                                </li>
+                                <li>
+                                    <a href="#">Services</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                            </ul>
+                            <a class="search-trigger" id="search-trigger">
+                                <i class="glyphicon glyphicon-search"></i>
+                                <span>Search</span>
+                            </a>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </div>
+        </div>
+        <div class="bigsearch-area" style="display:none" id="bigsearch-area">
+            <div class="bigsearch-wrap">
+                <form action="">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="radios">
+                                <!-- <span>Search in: </span> -->
+                                <div class="radio-wrap">
+                                    <input id="All" type="radio" name="searchScope" value="All" checked>
+                                    <label for="All">All</label>
+                                </div>
+                                <div class="radio-wrap">
+                                    <input id="Webpages" type="radio" name="searchScope" value="Webpages">
+                                    <label for="Webpages">Webpages</label>
+                                </div>
+                                <div class="radio-wrap">
+                                    <input id="Books" type="radio" name="searchScope" value="Books">
+                                    <label for="Books">Books</label>
+                                </div>
+                                <div class="radio-wrap">
+                                    <input id="Journals" type="radio" name="searchScope" value="Journals">
+                                    <label for="Journals">Journals</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="bigsearch">
+                                <input class="search-box" type="search" placeholder="Search for books, journals or webpages...">
+                                <button class="search-btn">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="wrap">
+            <div class="background">
+                <div class="jumbotron">
+                    <div class="carousel-wrap">
+                        <div class="carousel-intro">
+                            <h1>AMERICAN SCIENCE PUBLISHING </h1>
+                            <small>is An International Academic Publisher. It is currently:</small>
+                            <ul style="list-style-type:square">
+                                <li>Publishing Leading-Edge Peer-Reviewed, Open Access Academic Journals, Books And Conferences Proceedings</li>
+                                <li>Cooperating With American And Worldwide Renowned Editorial Board Members And Esteemed Reviewers</li>
+                                <li>Researching In the Scientific Areas of Medical, Clinical, Engineering, Science and Technology</li>
+                                <li>Organizing International Academic Conferences And Professional Meetings</li>
+                            </ul>
+                        </div>
+                        <div class="scroll-box">
+                            <i id="prev" class="glyphicon glyphicon-menu-left"></i>
+                            <div id="scroll-items" class="scroll-items">
+                                <ul>
+                                    <li>
+                                        <a href="#"><img src="img/book1.jpg" alt="">
+                                            <span class="book-title">book title</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="img/book2.jpg" alt="">
+                                            <span class="book-title">book title</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="img/book3.jpg" alt="">
+                                            <span class="book-title">book title</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="img/book4.jpg" alt="">
+                                            <span class="book-title">book title</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="img/book5.jpg" alt="">
+                                            <span class="book-title">book title</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="img/book6.jpg" alt="">
+                                            <span class="book-title">book title</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="img/book7.jpg" alt="">
+                                            <span class="book-title">book title</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="img/book8.jpg" alt="">
+                                            <span class="book-title">book title</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <i id="next" class="glyphicon glyphicon-menu-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="functions">
+                <div class="container-fluid">
+                    <div class="func-title">
+                        <h1>PUT YOUR MESSAGE HERE</h1>
+                        <small>Put your optional and message here</small>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4">
+                            <div class="journals">
+                                <div class="func-img"> <img class="img-responsive" src="img/func.jpg" alt=""> </div>
+                                <h2>Journals</h2>
+                                <div class="func-intro">
+                                    <p>Birch comes with a wide range of custom features to easily use it for your website project. Highlights include responsive design, retina optimization, custom colors, custom fonts, and more.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="articles">
+                                <div class="func-img"> <img class="img-responsive" src="img/func.jpg" alt=""> </div>
+                                <h2>Articles</h2>
+                                <div class="func-intro">
+                                    <p>This is an example of a page using a Featured Video. Simply add a YouTube or Vimeo embed code to showcase it at the top of your page or on the homepage as part of the Featured Pages section.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="submit">
+                                <div class="func-img"> <img class="img-responsive" src="img/func.jpg" alt=""> </div>
+                                <h2>Submit</h2>
+                                <div class="func-intro">
+                                    <p>Birch comes with simple to use shortcodes built right in. Easily add buttons with custom messages, links, and colors. Format text and images into columns. Display slideshows with your images.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about">
+                <div class="container-fluid">
+                    <h1 class="about-title">ABOUT</h1>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="about-img"> <img class="img-responsive" src="img/homepage-about.jpg" alt=""> </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="about-text">
+                                <p>Put your About text here. Use this space to promote your bio or share some interesting information about your company. You can also use HTML here such as a link, bold text or italicized text. </p>
+                                <p>Lorem ipsum dolor sit amet, qui ex civibus qualisque adversarium, ad sea iusto scripta adipiscing. Nobis interesset est ad. Ex cum odio laoreet antiopam. Per id reque verear veritus. Eu animal dolorum vel. Ius te vero sonet
+                                    consectetuer, eam vide nihil referrentur eu.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="osi">
+                <div class="container-fluid">
+                    <h1 class="osi-title">Open Special Issues</h1>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="">
+                                <ul class="release-list">
+                                    <li>
+                                        <a href="">Natural Language Processing</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Automation and Robotics</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Nitrogen on Plant Growth</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Anemia</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Glaciology and Cryosphere</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="osi">
+                                <ul class="release-list">
+                                    <li>
+                                        <a href="">Natural Language Processing</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Automation and Robotics</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Nitrogen on Plant Growth</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Anemia</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Glaciology and Cryosphere</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="osi">
+                                <ul class="release-list">
+                                    <li>
+                                        <a href="">Natural Language Processing</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Automation and Robotics</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Nitrogen on Plant Growth</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Anemia</a>
+                                    </li>
+                                    <li>
+                                        <a href="">More >>></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rpp">
+                <div class="container-fluid">
+                    <div class="row">
+                        <h1 class="rpp-title">Recently Published Paper</h1>
+                        <div class="col-md-6">
+                            <ul class="release-list">
+                                <li>
+                                    <a href="">The Effect of Microstructural and Geometric Inhomogeneities Induced by Laser for Forming Strain Analysis on Sheet Metal Formability <span>Jameslam&nbsp;&nbsp;2016/05/03</span></a>
+                                </li>
+                                <li>
+                                    <a href="">Weibull Statistics Strength Investigation of Synthetic Link Chains Made from Ultra-Strong Polyethylene Fibers</a>
+                                </li>
+                                <li>
+                                    <a href="">Japanese Encephalitis Virus Replication and Inhibitory Effect of shRNA in Mice</a>
+                                </li>
+                                <li>
+                                    <a href="">Selective Samples and the Accuracy of Screening for Intellectual Disabilities: Learning Disability Screening Questionnaire</a>
+                                </li>
+                                <li>
+                                    <a href="">A Study of Fostering College English Students’ Awareness of Cultural Comparison in Chinese Classrooms</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="release-list">
+                                <li>
+                                    <a href="">The Effect of Microstructural and Geometric Inhomogeneities Induced by Laser for Forming Strain Analysis on Sheet Metal Formability</a>
+                                </li>
+                                <li>
+                                    <a href="">Weibull Statistics Strength Investigation of Synthetic Link Chains Made from Ultra-Strong Polyethylene Fibers</a>
+                                </li>
+                                <li>
+                                    <a href="">Japanese Encephalitis Virus Replication and Inhibitory Effect of shRNA in Mice</a>
+                                </li>
+                                <li>
+                                    <a href="">Selective Samples and the Accuracy of Screening for Intellectual Disabilities: Learning Disability Screening Questionnaire</a>
+                                </li>
+                                <li>
+                                    <a href="">More >>></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="footer"></div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="assets/jquery/jquery-2.2.3.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="assets/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="assets/jquery/jquery-2.2.3.min.js"></script>
+        <script src="assets/scrollbox/jquery.scrollbox.js"></script>
+        <script>
+            $(function() {
+                $("#search-trigger").on('click', function() {
+                    $("#bigsearch-area").slideToggle(200);
+                });
+                $("#scroll-items").scrollbox({
+                    linear: true,
+                    step: 1,
+                    delay: 0,
+                    speed: 20,
+                    direction: 'h'
+                });
+                $("#prev").on("click", function() {
+                    $("#scroll-items").trigger("forward");
+                });
+                $("#next").on("click", function() {
+                    $("#scroll-items").trigger("backward");
+                });
+            })
+
+        </script>
+    </body>
+
+</html>
