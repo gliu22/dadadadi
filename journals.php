@@ -1,5 +1,17 @@
+<?php
+require_once 'include.php';
+//checkLogined();
+$link_address = "index.html";
+$sql="select Name from Journal";
+$rows=fetchAll($sql);
+if(!$rows){
+	echo "sorry,no books";
+	exit;
+}
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
     <head>
         <meta charset="utf-8">
@@ -189,18 +201,36 @@
                                 <option value="">psychology</option>
                                 <option value="">Social Science</option>
                             </select>
+                          </div>
+                          <!--表格-->
+                          <table class="table" cellspacing="0" cellpadding="0">
+                              <thead>
+                                  <tr>
+                                      <th>t      Name</th>
+
+                                  </tr>
+                              </thead>
+                              <tbody>
+                              <?php  foreach($rows as $row):?>
+                                  <tr>
+                                      <!--这里的id和for里面的c1 需要循环出来-->
+                                      <td><?php echo "<a href='".$link_address."'>".$row['Name']."</a>";?></td>
+                                  </tr>
+                                  <?php endforeach;?>
+                              </tbody>
+                          </table>
+                      </div>
                         </div>
                         <div class="col-md-3"></div>
                     </div>
+
                 </div>
             </div>
+
         </div>
 
 
-        <?php
 
-
-        ?>
         <div class="footer">
             <div class="footer-wrap">
                 <div class="container-fluid">
