@@ -24,7 +24,7 @@
         <div class="header">
             <div class="logobar">
                 <div class="logo">
-                    <a href="index.html"><img class="logo-img" src="img/logo.png" alt="natscipub.org"></a>
+                    <a href="Application/Home/View/Index/index.html"><img class="logo-img" src="img/logo.png" alt="natscipub.org"></a>
                 </div>
                 <div class="open-access">
                     <a href="#"><img class="oa-logo" src="img/oa_logo_small.png" alt="open access"></a>
@@ -126,7 +126,7 @@
         </div>
         <div class="wrap">
             <div class="sign-up-form">
-                <form class="form-horizontal" action="doAction.php?act=login">
+                <form method="post" class="form-horizontal" action="doAction.php?act=reg">
                     <div class="form-group">
                         <label for="userEmail" class="col-sm-3 control-label">Email</label>
                         <div class="col-sm-9">
@@ -146,17 +146,17 @@
                     <div class="form-group">
                         <label for="firstName" class="col-sm-3 control-label">First Name</label>
                         <div class="col-sm-9">
-                            <input type="text" class="sign-up-input form-control" id="firstName" placeholder="First Name" required="required"> </div>
+                            <input type="text" class="sign-up-input form-control" id="firstname" placeholder="First Name" required="required"> </div>
                     </div>
                     <div class="form-group">
                         <label for="lastName" class="col-sm-3 control-label">Last Name</label>
                         <div class="col-sm-9">
-                            <input type="text" class="sign-up-input form-control" id="lastName" placeholder="Last Name" required="required"> </div>
+                            <input type="text" class="sign-up-input form-control" id="lastname" placeholder="Last Name" required="required"> </div>
                     </div>
                     <div class="form-group">
                         <label for="degree" class="col-sm-3 control-label">Degree</label>
                         <div class="col-sm-9">
-                            <select class="form-control" name="" id="degree" required="required">
+                            <select class="form-control" name="Degree" id="Degree" required="required">
                                 <option value="default">Select One</option>
                                 <option value="bachelor">Bachelor</option>
                                 <option value="master">Master</option>
@@ -167,17 +167,17 @@
                     <div class="form-group">
                         <label for="affiliation" class="col-sm-3 control-label">Affiliation</label>
                         <div class="col-sm-9">
-                            <input type="text" class="sign-up-input form-control" id="affiliation" placeholder="Affiliation" required="required"> </div>
+                            <input type="text" class="sign-up-input form-control" id="Affiliation" placeholder="Affiliation" required="required"> </div>
                     </div>
                     <div class="form-group">
                         <label for="phone" class="col-sm-3 control-label">Phone</label>
                         <div class="col-sm-9">
-                            <input type="text" class="sign-up-input form-control" id="phone" placeholder="Phone" required="required"> </div>
+                            <input type="text" class="sign-up-input form-control" name= "Phone" id="Phone" placeholder="Phone" required="required"> </div>
                     </div>
                     <div class="form-group">
                         <label for="countryId" class="col-sm-3 control-label">Country</label>
                         <div class="col-sm-9">
-                            <select name="person.country.pid" id="countryId" class="form-control" onchange="check_validate_addPaper()">
+                            <select name="Region" id="Region" class="form-control" onchange="check_validate_addPaper()">
                                 <option value="-1">-Select One-</option>
                                 <option value="1">Afghanistan</option>
                                 <option value="2">Aland Islands</option>
@@ -431,23 +431,20 @@
                     <div class="form-group">
                         <label for="webPage" class="col-sm-3 control-label">Personal Webpage</label>
                         <div class="col-sm-9">
-                            <input type="text" class="sign-up-input form-control" id="webPage" placeholder="Personal Webpage"> </div>
+                            <input type="text" class="sign-up-input form-control" name="Webpage" id="Webpage" placeholder="Personal Webpage"> </div>
                     </div>
                     <div class="form-group">
                         <label for="faceBook" class="col-sm-3 control-label">Facebook</label>
                         <div class="col-sm-9">
-                            <input type="text" class="sign-up-input form-control" id="faceBook" placeholder="Facebook"> </div>
+                            <input type="text" class="sign-up-input form-control" name="Facebook" id="Facebook" placeholder="Facebook"> </div>
                     </div>
                     <div class="form-group">
                         <label for="linkedIn" class="col-sm-3 control-label">LinkedIn</label>
                         <div class="col-sm-9">
-                            <input type="text" class="sign-up-input form-control" id="linkedIn" placeholder="LinkedIn"> </div>
+                            <input type="text" class="sign-up-input form-control" name="Linkedln"id="linkedIn" placeholder="LinkedIn"> </div>
                     </div>
-                    <div class="form-group">
-                        <label for="optEmail" class="col-sm-3 control-label">Optional Email</label>
-                        <div class="col-sm-9">
-                            <input type="email" class="sign-up-input form-control" id="optEmail" placeholder="Optional Email"> </div>
-                    </div>
+                    <div class="input_item"><input type="hidden"  name="Level"  value="0" class="login_input user_icon" ></div>
+
                     <div class="form-group">
                         <div class="col-sm-offset-3 col-sm-9">
                             <button type="submit" class="btn btn-default">Sign up</button>

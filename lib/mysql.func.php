@@ -32,8 +32,11 @@ function insert($table,$array){
  * @param string $where
  * @return number
  */
-function update($table,$array,$where=null){
+function update($table,$array,$where){
+	$str=null;
 	foreach($array as $key=>$val){
+		//echo $key;
+		//echo $val;
 		if($str==null){
 			$sep="";
 		}else{
@@ -42,8 +45,8 @@ function update($table,$array,$where=null){
 		$str.=$sep.$key."='".$val."'";
 	}
 
-		$sql="update {$table} set {$str} ".($where==null?null:" where ".$where);
-
+		$sql="update {$table} set ".$str." where ".$where."";
+		//echo $sql;
 		$result=mysql_query($sql);
 		//var_dump($result);
 		//var_dump(mysql_affected_rows());exit;
@@ -76,6 +79,11 @@ function delete($table,$where=null){
  */
 function fetchOne($sql,$result_type=MYSQL_ASSOC){
 	$result=mysql_query($sql);
+
+	if($result === FALSE) {
+    die(mysql_error()); // TODO: better error handling
+}
+
 	$row=mysql_fetch_array($result,$result_type);
 	return $row;
 }

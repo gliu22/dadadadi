@@ -62,7 +62,7 @@ if(!$rows){
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
                                 <li class="active">
-                                    <a href="#">HOME
+                                    <a href="index.html">HOME
                                         <span class="sr-only">(current)</span>
                                     </a>
                                 </li>
@@ -201,28 +201,30 @@ if(!$rows){
                                 <option value="">psychology</option>
                                 <option value="">Social Science</option>
                             </select>
-                          </div>
-                          <!--表格-->
-                          <table class="table" cellspacing="0" cellpadding="0">
-                              <thead>
-                                  <tr>
-                                      <th>t      Name</th>
 
-                                  </tr>
-                              </thead>
-                              <tbody>
-                              <?php  foreach($rows as $row):?>
-                                  <tr>
-                                      <!--这里的id和for里面的c1 需要循环出来-->
-                                      <td><?php echo "<a href='".$link_address."'>".$row['Name']."</a>";?></td>
-                                  </tr>
-                                  <?php endforeach;?>
-                              </tbody>
-                          </table>
-                      </div>
                         </div>
                         <div class="col-md-3"></div>
                     </div>
+
+                  </div>
+                  <!--表格-->
+                  <table class="table" cellspacing="0" cellpadding="0">
+                      <thead>
+                          <tr>
+                              <th>Name</th>
+
+                          </tr>
+                      </thead>
+                      <tbody>
+                      <?php  foreach($rows as $row):?>
+                          <tr>
+                              <!--这里的id和for里面的c1 需要循环出来-->
+                              <td><?php echo "<a href='".$link_address."'>".$row['Name']."</a>";?></td>
+                          </tr>
+                          <?php endforeach;?>
+                      </tbody>
+                  </table>
+              </div>
 
                 </div>
             </div>

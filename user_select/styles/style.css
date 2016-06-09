@@ -1,0 +1,42 @@
+body{
+    /*background: #e2c18e;*/
+}
+.wrap{
+    width: 80%;
+    margin: 10% auto;
+}
+.container{
+    width: 100%;
+}
+.audit-form{
+    width: 100%;
+}
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover{
+    border: 1px solid #ddd;
+    border-right: transparent;
+}
+
+.nav-tabs>li>a{
+    border-radius: 0;
+}
+
+.nav-tabs{
+    border-bottom: 0;
+    background: #ddd;
+}
+
+.nav-tabs>li>a{
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.form-space-button{
+  margin-bottom: 40px;
+
+}
+#myTabs{
+    position: fixed;
+    width: 25%;
+}
